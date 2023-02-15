@@ -1,0 +1,16 @@
+body {
+  color: #006747;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #006747;
+  text-decoration: none;
+}
+
+#player-post {
+  color: black;
+}
