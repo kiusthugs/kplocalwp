@@ -12,8 +12,8 @@ export default function PlayerPost({posts}) {
     console.log(player)
 
   return (
-    <div>
-        <h1>{player.title.rendered}</h1>
+    <div id="player-page">
+        <h1 id="player-title">{player.title.rendered}</h1>
         {/* <img src={img} alt={player.title.rendered}/> */}
         <div dangerouslySetInnerHTML={{__html: player.content.rendered}} id="player-post"/>
     </div>
