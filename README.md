@@ -68,5 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# kplocalwp
-# kplocalwp
+
+# Masters Website
+
+This website displays articles, events, biographies, and statistics within the golfing professional scene. 
+
+## Installation
+
+
+## Usage
+
+
