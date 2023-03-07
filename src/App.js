@@ -45,6 +45,7 @@ function App() {
     }
   }
 
+  // Fetch Wordpress API
   useEffect(() => {
     try {
       fetch("http://kplocalwptwo.local/wp-json/wp/v2/posts")

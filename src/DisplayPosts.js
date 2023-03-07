@@ -42,6 +42,7 @@ export default function DisplayPosts({posts, postsImg, handleOrder}) {
     <div id="posts-underline"></div> 
     <div id="content">
       {posts.map((post) => {
+        //Find imgs from specific player
         const grabImg = postsImg.find( img => img.id === post.featured_media )
           return (
           <div key={post.id} className="posts">

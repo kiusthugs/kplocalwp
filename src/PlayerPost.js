@@ -15,11 +15,10 @@ export default function PlayerPost({posts}) {
 
     let { id } = useParams()
 
+    //Find player post based off of react-router-dom params
     const player = posts.find(post => {
         return post.id === Number(id)
     })
-
-    console.log(player)
 
   return (
     <div id="player-page">

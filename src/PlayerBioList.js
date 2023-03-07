@@ -15,10 +15,10 @@ import { Link } from "react-router-dom";
 
 export default function PlayerBios({bios, postsImg}) {
 
-
   return (<>
   <Link to="/"><button id="home">Back to Home</button></Link>
             {bios.map((bio) => {
+                //Find imgs from specific player
                 const bioImg = postsImg.find((post) => {
                     return post.id === bio.acf.golfer_image
                 })

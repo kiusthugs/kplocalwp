@@ -18,7 +18,10 @@ export default function MeetupsPage({meetups, postsImg}) {
     <div>
         <h1 className="event-category">Meetups</h1>
         {meetups.acf.meetup.map((m) => {
+            //Find imgs from specific player
             let img = postsImg.find(post => post.id === m.meetup_image)
+
+            //Format date
             var date = new Date(m.meetup_date_and_time);
             var options = {
                 hour: 'numeric',
@@ -28,8 +31,7 @@ export default function MeetupsPage({meetups, postsImg}) {
                 month: "long",
                 day: "numeric",
             };
-        var timeString = date.toLocaleString('en-US', options);
-        console.log(timeString);
+            var timeString = date.toLocaleString('en-US', options);
             console.log(m)
             return(
                 <div key={m.meetup_title} className="event-posts">

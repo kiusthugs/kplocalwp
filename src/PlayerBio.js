@@ -15,12 +15,12 @@ import { useParams, Link } from 'react-router-dom'
 export default function PlayerBio({bios, postsImg}) {
     let { id } = useParams()
 
+    //Find specific player within bios array
     const player = bios.find(bio => {
         return bio.id === Number(id)
     })
 
-    console.log(player)
-
+    //Find imgs from specific player
     const bioImg = postsImg.find((post) => {
         return post.id === player.acf.golfer_image
     })

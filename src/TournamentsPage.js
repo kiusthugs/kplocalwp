@@ -13,7 +13,6 @@ import {Link} from 'react-router-dom'
  */
 
 export default function TournamentsPage({tournaments, postsImg}) {
-  console.log(tournaments)
   return (<>
   <div>
         <h1 className="event-category">Tournaments</h1>

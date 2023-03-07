@@ -17,10 +17,11 @@ export default function DisplayEvent({postsImg}) {
     console.log(state)
     let img
     let tournamentDateTwo
+
+    // If event is meetup or tournament, grab date and or images
     if (state.meetup_image) {
         img = postsImg.find(post => post.id === state.meetup_image)
     } else if (state.event_image) {
-
         var tournamentDate = [state.event_date.slice(0, 4), "/", state.event_date.slice(4)].join('');
         tournamentDateTwo = [tournamentDate.slice(0, 7), "/", tournamentDate.slice(7)].join('');
         img = postsImg.find(post => post.id === state.event_image)
