@@ -1,6 +1,18 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
+/**
+ * This component displays the biography page where it lists all the posts within the Biographies type, users can select a player and learn more about them.
+ */
+
+/**
+ * 
+ * @param {Array} bios Array of biographies
+ * @param {Array} postsImg Array of images
+ *
+ * @returns A list of players that holds their biography
+ */
+
 export default function PlayerBios({bios, postsImg}) {
 
 

@@ -1,10 +1,21 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
+
+/**
+*
+* This component takes in the Wordpress API posts, media, and a function that sorts posts.
+* This component is the home page of the website that display initial posts and navigation links.
+*/
+
+/**
+ *
+ * @param {Array} posts Array of posts from default post type
+ * @param {Array} postsImg Array of images from Wordpress API media
+ * @param {Function} handleOrder Function that adds interactivity to the control form
+ * @returns Displays home page
+ */
 export default function DisplayPosts({posts, postsImg, handleOrder}) {
-
-
-
   return (
   <div>
     <header>
@@ -31,11 +42,9 @@ export default function DisplayPosts({posts, postsImg, handleOrder}) {
     <div id="posts-underline"></div> 
     <div id="content">
       {posts.map((post) => {
-        // console.log(post)
         const grabImg = postsImg.find( img => img.id === post.featured_media )
           return (
           <div key={post.id} className="posts">
-            {/* <img src={`${http://kplocalwp.local/wp-json/wp/v2/media/43}`} /> */}
             <Link to={`${post.id}`}>
             <img src={`${grabImg.guid.rendered}`} alt="pro golfer" className="golfer-thumbnail"/>
             <div className="post-caption">

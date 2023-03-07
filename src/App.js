@@ -14,9 +14,14 @@ function App() {
   const [postsImg, setPostsImg] = useState([])
   const [bio, setBio] = useState([])
   const [events, setEvents] = useState([])
-  // const [loading, setLoading] = useState(true)
 
-  //Change order of posts with select control
+/**
+ * This function handles the sorting control field on the home page and determines the order of posts by date.
+ * 
+ * @param {Object} e The event object of the control field
+ * @returns {*} SetPosts state changed based off control field text
+ */
+
   function handleOrder(e) {
 
     let copyPosts = [...posts]

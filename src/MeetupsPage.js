@@ -1,16 +1,20 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
+/**
+ * This component displays two components in a lists meetups within the EventsPage component
+ */
+
+/**
+ * 
+ * @param {Array} meetups Array of posts within the Events/ Meetups post type
+ * @param {Array} postsImg Array of images
+ * @returns Lists of meetups
+ */
+
 export default function MeetupsPage({meetups, postsImg}) {
-
-    // const bioImg = postsImg.find((post) => {
-    //     return post.id === meetups
-    // })
-
-    console.log(meetups)
   return (
     <>
-    {/* <Link to="/"><button id="home">Back to Home</button></Link> */}
     <div>
         <h1 className="event-category">Meetups</h1>
         {meetups.acf.meetup.map((m) => {

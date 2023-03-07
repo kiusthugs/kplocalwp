@@ -1,13 +1,22 @@
 import React from 'react'
 import {useLocation} from "react-router-dom";
 
+/**
+ * This component takes in a event post through react-router-dom useLcoation hook from either the TournamentsPage or MeetupPage component and displays the selected event
+ */
+
+/**
+ *
+ * @param {Array} postsImg Array of images from Wordpress API media
+ * @returns Displays the selected event
+ */
+
 export default function DisplayEvent({postsImg}) {
 
-    let { state } = useLocation();
+    let { state } = useLocation()
     console.log(state)
-    // let oof = state
-    let img;
-    let tournamentDateTwo;
+    let img
+    let tournamentDateTwo
     if (state.meetup_image) {
         img = postsImg.find(post => post.id === state.meetup_image)
     } else if (state.event_image) {

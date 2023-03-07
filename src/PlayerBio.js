@@ -1,6 +1,17 @@
 import React from 'react'
 import { useParams, Link } from 'react-router-dom'
 
+/**
+ * This component displays a selected player biography from PlayerBioList
+ */
+
+/**
+ * 
+ * @param {Array} bios Array of biographies 
+ * @param {Array} postsImg Array of images
+ * @returns Takes in id from useParams hook and displays the selected players' biograhpy
+ */
+
 export default function PlayerBio({bios, postsImg}) {
     let { id } = useParams()
 
