@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,15 +67,32 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
 
 # Masters Website
 
-This website displays articles, events, biographies, and statistics within the golfing professional scene. 
+This website displays user created articles, events, biographies, and statistics within the golfing professional scene. It is built with a React frontend that fetches a Wordpress API that acts as CMS.
 
-## Installation
+## Technologies
+Project is created with:
+* React
+* Wordpress
+* react-router-dom
+
+## Setup
+* Start Wordpress Server
+* Run `npm start`
+
+## Features
+* Articles of the winners from the Masters tournament
+* Get informed of upcoming golf related events that requires attendance
+* Biorgraphies and statistics of specific golfers
+
+### TO DO:
+* Sort home page posts by different orders
+* Find out Tiger Woods average driver yardage in his biography
+* RSVP a tournament event with the provided email or link
 
 
-## Usage
 
 
